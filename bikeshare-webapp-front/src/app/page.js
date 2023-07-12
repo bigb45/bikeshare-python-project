@@ -63,21 +63,22 @@ export default function Home() {
   const fetchTable = () => {
     let localHost = "";
     let googleServer = "";
-    // if (!days.length && months.length) {
-    //   url = `http://127.0.0.1:8000/api/bikeshare/?days=${Array.from(
-    //     days
-    //   )}&months=${Array.from(months)}&city=${city}&count=${rowCount}`;
-    //   fetch(url);
-    // } else {
-    //   alert("PLEASE FILL THE FILTERS");
-    // }
-    // http://34.91.142.167:8000/api/bikeshare/?days=monday&months=[january]&city=newyork&count=5
-    googleServer = `http://34.91.142.167:8000/api/bikeshare/?days=${Array.from(
+    const daysArray = Array.from(days).length;
+    const monthsArray = Array.from(months).length;
+
+    console.log(daysArray, monthsArray);
+    googleServer = `http://34.32.137.18:8000/api/bikeshare/?days=${Array.from(
       days
     )}&months=${Array.from(months)}&city=${city}&count=${rowCount}`;
-    localHost = `http://127.0.0.1:8080/api/bikeshare/?days=${Array.from(
+    localHost = `http://127.0.0.1:8000/api/bikeshare/?days=${Array.from(
       days
     )}&months=${Array.from(months)}&city=${city}&count=${rowCount}`;
+    if (daysArray && monthsArray) {
+      fetch(googleServer);
+    } else {
+      alert("PLEASE FILL THE FILTERS");
+    }
+
     fetch(googleServer);
   };
 

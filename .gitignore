@@ -9,9 +9,9 @@
 /coverage
 
 # next.js
-/bikeshare-data/.next/
-/bikeshare-data/out/
-
+/bikeshare-webapp-front/.next/
+/bikeshare-webapp-front/out/
+/bikeshare-webapp-front/node_modules/
 # production
 /bikeshare-data/build
 
