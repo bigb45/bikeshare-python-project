@@ -5,6 +5,9 @@
 This website is a simple data view for the bikeshare dataset implemented with ReactJS and Django.
 
 ## View the website at http://bikeshare-data-view.000webhostapp.com
+### THE WEBSITE DOES NOT USE HTTPS THUS THE MESSAGE 'Deceptive site ahead', IT IS COMPLETELY SAFE TO USE.
+## Instructions
+simply click on 'Details' then 'visit this unsafe site.'
 
 ## Protip #1: you can click on a table header to sort by that header <br>
 
@@ -20,3 +23,4 @@ This website is a simple data view for the bikeshare dataset implemented with Re
 ## Protip #2: click on the graph labels at the top to show/hide a graph element
 
 Note: the logic for data handling and processing can be found in: bikeshare api/webapp/data_handling/bikehsare.py
+[LINK TO THE PYTHON FILE USED TO CONTROL THE LOGIC](https://github.com/bigb45/bikeshare-python-project/blob/main/bikeshare%20api/webapp/data_handling/bikeshare.py)
